@@ -8,7 +8,8 @@ jobs:
     uses: Silverlan/pragma/.github/workflows/build-module.yml@main
     if: github.repository != 'Silverlan/pr_module_template'
     with:
-      repository: 'Silverlan/pr_ik/main'
+      repository: 'Silverlan/pr_ik'
+      branch: 'main'
       os: windows
     secrets:
       repository_token: ${{ secrets.REPO_ACCESS_TOKEN }}
